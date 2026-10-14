@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clover Hollow: A Three-Year Promise</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<meta name="description" content="Clover Hollow: a cozy stat-raising game. Raise a young rabbit over three years and save the town.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B0%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div class="bg" id="bg1"></div><div class="bg" id="bg2"></div>
+    <div id="tint"></div>
+    <canvas id="fx"></canvas>
+    <div id="cast"></div>
+    <div id="title"><h1>Clover<span>Hollow</span></h1><p>Three years. One rabbit. Every month is yours to plan.</p></div>
+    <div id="chips"></div>
+    <div id="hud">
+      <span class="pill" id="hudDate" hidden></span>
+      <span class="sp"></span>
+      <span class="pill" id="hudCoins" hidden></span>
+      <button class="pill" id="statusBtn" aria-label="Open status" hidden>Status</button>
+      <button class="pill" id="muteBtn" aria-label="Toggle sound effects" title="Sound effects on/off">🔊</button>
+    </div>
+  </div>
+  <section id="dock"></section>
+  <aside id="side" aria-label="Status"></aside>
+</div>
+<script src="js/data.js"></script>
+<script src="js/engine.js"></script>
+</body>
+</html>
